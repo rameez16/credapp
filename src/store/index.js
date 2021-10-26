@@ -4,12 +4,13 @@ import Vuex from "vuex";
 Vue.use(Vuex);
 
 export default new Vuex.Store({
-  state: { name: "", place: "", id: "" },
-  mutations: {
-       
-    
-      
+  state: { formdata: [], bool: false, id: [] },
+
+  actions: {
+    updateNameList(state, payload) {
+      this.state.formdata.push(payload);
+      console.log(this.state.formdata);
+    },
   },
-  actions: {},
   modules: {},
 });

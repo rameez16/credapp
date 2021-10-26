@@ -5,6 +5,8 @@
     <div id="form">
       <Form />
     </div>
+
+    <div>{{ $store.state.name }}</div>
   </div>
 </template>
 
@@ -22,7 +24,9 @@ export default {
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif git push --set-upstream origin main
+  font-family: Avenir, Helvetica, Arial,
+    sans-serif git push --set-upstream origin main;
+}
 #form {
   width: 50%;
   height: 50%;
